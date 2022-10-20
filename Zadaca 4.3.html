@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vezba 4.3</title>
+    <link rel="stylesheet" href="style1.css"/>
+    <script type="text/javascript" src="jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+        $("document").ready(function() {
+            var button = $("<button>More</button>");
+            $(".box").append(button);
+            
+            $("img").attr("alt",function(){
+                
+                return $(this).attr("src");
+            });
+            $("img").attr("class", "offers");
+            $(".box").wrapAll("<div id='offers-wrap'/>");
+         $("#offers-wrap").css({padding:"10px", margin:"10px"});
+            $(".image").wrap("<a href='http://google.com/' target='_blank'></a>");
+          $(".image").css("border-bottom","1px solid red");
+            $(".image").last().css("border-bottom","none");
+            $(".red").removeClass();
+            $(".blue").attr("name","plavo");
+            $("#vtor ul").attr("class", "info-links");
+            
+            $(".info-links a").on("click", function(e){
+                
+                $(this).text("Ova e podolg tekst")
+                .css("color","green");
+    
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Inserting Document Content</h1>
+    <h2>Description of inserting content</h2>
+    <p>Content can be inserted at various points in the document, relative to existing content, using a variety of jQuery methods built for each purpose.</p>
+    <p>There are two sets of insertion functions: one set for inserting content inside of other content, and one for inserting outside of other content.</p>
+	<ul id="list1">
+		<li class="a"><code>append()</code>: Appends content to the inside of the matched elements</li>
+		<li class="a"><code>prepend()</code>: Prepends content to the inside of the matched elements</li>
+		<li class="a"><code>appendTo()</code>: Appends the specified content to the inside of the matched elements</li>
+		<li class="a"><code>prependTo()</code>: Prepends the specified content to the inside of the matched elements</li>
+    </ul>
+    <ul>
+		<li class="a"><code>after()</code>: Appends content to the outside of the matched elements</li>
+		<li class="a"><code>before()</code>: Prepends content to the outside of the matched elements</li>
+		<li class="a"><code>insertAfter()</code>: Takes the specified content and appends it outside of the specified elements</li>
+		<li class="a"><code>insertBefore()</code>: Takes the specified content and prepends it outside of the specified elements</li>
+	</ul>
+    <section>
+    <div class="box">
+        <h1>Box 1</h1>
+        <p class="a">This is box 1</p>
+        <a href="images/Grass.jpg"><img src="images/Grass.jpg" alt="Grass" /></a>
+    </div>
+    <div class="box">
+        <h1>Box 2</h1>
+        <p class="a">This is box 2</p>
+        <a href="images/Leaf.jpg"><img src="images/Leaf.jpg" alt="Leaf" /></a>
+    </div>
+    <div class="box">
+        <h1>Box 3</h1>
+        <p class="a">This is box 3</p>
+        <a href="images/Spring.jpg"><img src="images/Spring.jpg" alt="Spring" /></a>
+    </div>
+    <div class="box">
+        <h1>Box 4</h1>
+        <p class="a">This is box 4</p>
+        <a href="images/Water.jpg"><img src="images/Water.jpg" alt="Water" /></a>
+    </div>
+       
+         <aside>
+            <div class="red" >
+                <img src="images/Spring.jpg" alt="Spring" />
+             <p>Ova e tekst za slika 1</p>
+             </div>
+            <div class="blue">
+                <img src="images/Leaf.jpg" alt="Leaf" />
+                <p>Ova e tekst za slika 2</p>
+             </div>
+            <div class="image">
+                <img src="images/Grass.jpg" alt="Grass" />
+             <p>Ova e tekst za slika 3</p>
+             </div>
+            <div class="image">
+                <img src="images/Water.jpg" alt="Water" />
+             <p>Ova e tekst za slika 4</p>
+             </div>
+        </aside>
+         <aside id="vtor">
+        <div>
+            <ul>
+                <li><a href="#">Prv link</a></li>
+                <li><a href="#">Vtor link</a></li>
+                <li><a href="http://google.com/">Tret link</a></li>
+                <li><a href="http://google.com/">Cetvrt link</a></li>
+                <li><a href="http://google.com/">Petti link</a></li>
+            </ul>
+        </div>
+        </aside>
+    </section>
+    
+</body>
+</html>

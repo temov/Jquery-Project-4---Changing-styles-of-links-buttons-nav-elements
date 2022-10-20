@@ -1,0 +1,115 @@
+/*
+** Styles used in the jQuery Essential Training course materials
+*/
+html{
+    background: grey;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12pt;
+    width:1200px;
+    margin: 0 auto;
+    background: white;
+    height: auto;
+}
+
+#example {
+    border: 1px solid gray;
+    background-color: #b3c8d0;
+    font-size:14pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    min-height: 200px;
+}
+
+.box {
+    border: 1px solid gray;
+    background-color: #b3c8d0;
+    font-size:14pt;
+    padding-right: 5pt;
+    min-height: 300px;
+    width: 150px;
+    float: left;
+    margin:15px 5px;
+}
+img{
+    
+    width: 100px;
+    height:100px;
+    margin: 10px;
+}
+
+
+.smallbox {
+    border: 1px solid gray;
+    background-color: #b3c8d0;
+    font-size:14pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin-bottom: 10pt;
+    margin-right: 0;
+    margin-left: 0;
+    min-height: 150px;
+    width: 200px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+code {
+    background-color: #e8e8e8;
+    border: 1px solid #a8a8a8;
+    border-radius: 3px;
+    padding: 0 2pt;
+    margin: 2pt;
+    font-family: "source-code-pro", Consolas, monospace;
+    font-size: .8em;
+}
+
+li {
+    line-height: 1.3em;
+}
+
+button {
+    font-size: 14pt;
+    margin: 8px;
+    position: relative;
+    top:20px;
+    right: 5px;
+}
+
+#eventDetails {
+    border: 1px solid #aaa;
+    margin-top: 8pt;
+    padding: 2pt;
+}
+
+.lineitem {
+    width: 120px;
+    display: inline-block
+}
+ aside {
+    width:200px;
+     float: right;
+     line-height: normal;
+     border: 1px solid black;
+     padding-left: 5px;
+     
+}
+#vtor{
+    width:200px;
+     line-height: normal; 
+    clear: both;
+    margin-top: 5px;
+   
+}
+aside p{
+    margin-left: 5px;
+}
+aside img{
+    margin:5px;
+    padding: 0;
+    width: 150px;
+    height:100px;
+}
